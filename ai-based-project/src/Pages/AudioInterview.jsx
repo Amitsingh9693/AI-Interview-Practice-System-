@@ -30,7 +30,7 @@ const AudioInterview = () => {
         interviewDetails.company ? ` at ${interviewDetails.company}` : ""
       }. Focus on ${interviewDetails.focusArea} aspects. Return only the questions, one per line, without numbering.`;
 
-      const API_KEY = "AIzaSyBHVJ6219_JNKkVGCkq9m47ABaCcJ181fc"; // Replace with your actual API key
+      const API_KEY = process.env.REACT_APP_GEMINI_API_KEY; // Replace with your actual API key
       const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
       const response = await fetch(API_URL, {
@@ -184,7 +184,7 @@ const AudioInterview = () => {
       4. Overall rating out of 10
       5. Suggested next steps`;
 
-      const API_KEY = "AIzaSyBHVJ6219_JNKkVGCkq9m47ABaCcJ181fc"; // Replace with your actual API key
+      const API_KEY = process.env.REACT_APP_GEMINI_API_KEY; // Replace with your actual API key
       const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`;
 
       const response = await fetch(API_URL, {

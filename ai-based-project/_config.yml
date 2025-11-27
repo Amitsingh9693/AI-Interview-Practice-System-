@@ -1,0 +1,11 @@
+title: My Frontend Site
+theme: jekyll-theme-primer
+
+exclude:
+  - ../Backend
+  - ../Backend/node_modules
+  - node_modules
+  - .github
+  - README.md
+  - package.json
+  - package-lock.json

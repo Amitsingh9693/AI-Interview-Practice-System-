@@ -2,8 +2,7 @@ const User = require("../Models/user");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
-// Hardcoded JWT secret (✔ for dev, ❌ for production — use .env)
-const JWT_SECRET = "myverysecretkey123";
+const JWT_SECRET = process.env.JWT_SECRET || "defaultsecretkey";
 
 // Helper: Generate JWT token
 const generateToken = (userId) => {
