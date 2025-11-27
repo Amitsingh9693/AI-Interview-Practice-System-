@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGODB_URI = "mongodb+srv://Moketon:Moketon%40123@moketon.sjkfjma.mongodb.net/moketonDB?retryWrites=true&w=majority";
+const MONGODB_URI = //your MongoDB connection string here;
 
 const connectDB = async () => {
   try {
